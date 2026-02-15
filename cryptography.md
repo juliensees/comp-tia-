@@ -43,4 +43,52 @@
     - Non-Repudiation: the recipient of a message can prove to an independent third party that the message came from the alleged sender
         - digital signatures prove the original sender
         - only possible with asymmetric algorithms
-        
+
+### One missing piece in an encryption algorithm will make it entirely faulty
+
+Security through Obscurity - security of an algorithm depends upon the secrecy of its approach
+  - SECRECY SHOULD NEVER BE THE ONLY SECURITY CONTROL!! SECURITY THROUGH OBSCURITY WILL EVENTUALLY BE LEAKED!
+      - DEFENSE IN DEPTH - THE BEST SECURITY APPROACH! MULTIPLE LAYERED SECURITY! SOME PRIVATE (OBSCURITY) BUT SOME PUBLIC!
+   
+Algorithm length - the longer the key length, the higher the security
+                 - but the longer the key length, the lower the performance (speed goes down, too much processing)
+
+cryptographic lifecycle - eventually algorithms become insecure due to discovered flaws or the key link becomes vulnerable to brute force attacks
+    - NIST (National Institute of Standards and Technology)
+      - 1) Initiation - the org realizes it needs a new cryptographic system and decides the levels of confidentiality/integrity/availability objectives
+          1) Integrity of keys. authentication, authorization and nonrepudiation should be supported 
+          2) Availability of security mechanisms/features at least 99.5% of the time. responsive and adaptable systems and short response times
+          3) Integrity and Authentication like digital signatures to validate signers of a message and integrity of info received 
+      - 2) Development and Acquisition - finding an appropriate combo of software, hardware, and algorithms that meet the objectives (mostly acquired)
+      - 3) Implementation and Assessment - configure the system for use and assesss whether it meets the objectives
+      - 4) Operations and Maintenance - org ensures the continued secure operation of the crypto system
+      - 5) Sunset - the org stops using the system and destroys or archives sensitive material such as keys 
+
+Deidentification - the process of moving through a data set and removing data that may be individually identifying (CAN BE LINKED BACK LATER!)
+  - this process helps protect against accidental disclosures of PII during breaches
+  - but technically "programs" can combine zip code, date of birth, and gender to coalesce information together to identify 87% of people
+    
+  HIPAA DE-identification Standard Methods
+    Expert Determination - have statisticians analyze your data set and validate that it would be unlikely it could disclose identity of individuals
+        - but this pathway makes it possible of an accidental disclosure (bringing in professional statisticians)
+    Safe Harbor - requires the removal of 18 data types of identifiers
+
+Anonymization - remove the possiblity of identification (CANNOT BE LINKED BACK!)
+  - used in public datasets, health info for research purposes, data sharing with third parties
+        - you can aggregate info about people within a city, but you don't need to know who they are
+
+Data obfuscation - transforms PII into a form it is no longer possible to tie it to a person
+  - Hashing - replaces sensitive fields with hash values
+    - when you input a password,the system is actually matching the hash values to each other,not the plain text(the original plain text is gone from server!)
+  - Rainbow Table Attack - compares hash values with precomputed hashes
+     - the attacker uses precomputed hash databases to reverse password hashes quickly.
+     - Each hash algorithm has its own table
+      - "salting" adds an extra string to these hashes (random values) and is a modern way of making a rainbow table attack unusable
+              - used for passwords/stopping possiblity of rainbow tables
+              - if stolen, a hashed password could technically maybe be cracked mathematically later
+      - Tokenization - replaces sensitive fields with a random identifier
+              - used more for credit cards/payment processing
+              - if stolen, each value is RANDOM, and thus meaningless... UNLESS THE TOKEN VAULT IS ALSO STOLEN!!
+      - Masking - redacts sensitive info from a file
+              - 
+
