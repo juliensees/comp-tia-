@@ -14,17 +14,18 @@
                                 - usually used for BULK data encryption (FASTER TO CREATE; uses less data)
 ### SYMMETRIC ENCRYPTION - the key is created and must be distributed to both parties (need to transfer the key to both people... dangerous, can be intercepted) 
 
- * asymmetric encryption algorithms - use different keys (public key encrypts the message, and private key decrypts the message)
-                                                - but the keys come from the same pair!
-                                - usually used for key exchange and authentication
-                                              - IN DIGITAL SIGNATURES, someone "signs" it with their private key, and it's decrypted with the public one
-                                                    - this proves that the secure message wasn't altered
-                                       General Rule of Thumb             
-                                          Public key → lets people send secrets TO you
-                                          Private key → lets you prove something came FROM you
+ * asymmetric encryption algorithms - use different keys (public key encrypts the message, and private key decrypts the message)  
+                                                - but the keys come from the same pair!  
+                                - usually used for key exchange and authentication  
+                                              - IN DIGITAL SIGNATURES, someone "signs" it with their private key, and it's decrypted with the public one  
+                                                    - this proves that the secure message wasn't altered  
+                                       * General Rule of Thumb               
+                                          Public key → lets people send secrets TO you  
+                                          Private key → lets you prove something came FROM you  
 
 ### ASYMMETRIC ENCRYPTION - the public key is shared, but the private key only exists on the personal computer, so it doesn't have to go anywhere
-      - i download an app or a certificate that has software that gets a public key from someone else and creates my private key (and stays locally/never leaves)
+
+    - i download an app or a certificate that has software that gets a public key from someone else and creates my private key (and stays locally/never leaves)
 
   ### ENCRYPTION MAKES SOMETHING SECURE, BUT AUTHENTICATION PROVES PROOF OF ORIGIN! --- SOMEONE MIGHT HAVE A KEY, BUT DOESN'T PROVE THEIR IDENTITY
 
