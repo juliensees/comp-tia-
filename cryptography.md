@@ -25,7 +25,7 @@
 
 ### ASYMMETRIC ENCRYPTION - the public key is shared, but the private key only exists on the personal computer, so it doesn't have to go anywhere
 
-    - i download an app or a certificate that has software that gets a public key from someone else and creates my private key (and stays locally/never leaves)
+  - i download an app or a certificate that has software that gets a public key from someone else and creates my private key (and stays locally/never leaves)
 
   ### ENCRYPTION MAKES SOMETHING SECURE, BUT AUTHENTICATION PROVES PROOF OF ORIGIN! --- SOMEONE MIGHT HAVE A KEY, BUT DOESN'T PROVE THEIR IDENTITY
 
