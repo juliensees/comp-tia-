@@ -13,7 +13,8 @@
                   - two people can agree on an encryption key and share it
                                 - usually used for BULK data encryption (FASTER TO CREATE; uses less data)
 ### SYMMETRIC ENCRYPTION - the key is created and must be distributed to both parties (need to transfer the key to both people... dangerous, can be intercepted) 
-            asymmetric encryption algorithms - use different keys (public key encrypts the message, and private key decrypts the message)
+
+      - asymmetric encryption algorithms - use different keys (public key encrypts the message, and private key decrypts the message)
                                                 - but the keys come from the same pair!
                                 - usually used for key exchange and authentication
                                               - IN DIGITAL SIGNATURES, someone "signs" it with their private key, and it's decrypted with the public one
