@@ -89,6 +89,8 @@ Data obfuscation - transforms PII into a form it is no longer possible to tie it
       - Tokenization - replaces sensitive fields with a random identifier
               - used more for credit cards/payment processing
               - if stolen, each value is RANDOM, and thus meaningless... UNLESS THE TOKEN VAULT IS ALSO STOLEN!!
-      - Masking - redacts sensitive info from a file
-              - 
+      - Masking - redacts sensitive info from a file, but doesn't change the database
+              - is used to only mask certain parts of a file
+                  - first digits of a SS number
+                  - parts of a credit card number
 
