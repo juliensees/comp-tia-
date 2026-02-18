@@ -102,7 +102,8 @@ Certificate Stapling - relieves some of the burden on CA's by validating certifi
   - Extended validation (EV Certificate) - receives docs from the certificate subject, the CA performs an extensive             investigation to verify physical existence and legitimacy of the org  
         - most secure
 
-- Certificate Formats  
+- Certificate Formats
+  
       - DER (Distinguished Encoding Rules) - binary certificate format  
             - uses .der, .crt, .cer extensions    
       - PEM (Privacy Enhanced Mail) - ASCII text versions of DER certificates (more readable than binary)    
