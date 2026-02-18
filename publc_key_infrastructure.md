@@ -30,10 +30,10 @@ RIPEMD - created as a non-government sponsored hash system
     - produces 128, 160, 256, and 320-bit hashes
       - 128 not used, but 160 is used a lot in Bitcoin
 
-HMAC (Hash-based Message Authentication Code) - combines symmetric cryptography and hashing  
-    - is fast, and low cost
-    - but both parties must keep the singular secret key safe
-      - algorithm that uses a hash function and a secret key (asymmetric algorithm) and a message to                 create a secure signature/code for the message   
+HMAC (Hash-based Message Authentication Code) - combines symmetric cryptography and hashing    
+    - is fast, and low cost  
+    - but both parties must keep the singular secret key safe  
+      - algorithm that uses a hash function and a secret key (asymmetric algorithm) and a message to                   create a secure signature/code for the message   
           - HMAC is essentially an algorithm that “signs” a message using a secret key so the receiver can                 verify two things:  
                   *Authenticity / Identity → The message came from someone who knows the secret key.  
                   *Integrity → The message hasn’t been altered in transit.  
@@ -104,12 +104,12 @@ Certificate Stapling - relieves some of the burden on CA's by validating certifi
 
 - Certificate Formats  
       - DER (Distinguished Encoding Rules) - binary certificate format  
-          - uses .der, .crt, .cer extensions  
-      - PEM (Privacy Enhanced Mail) - ASCII text versions of DER certificates (more readable than binary)  
-          - uses .pem and ALSO .crt  
-            - both DER AND PEM can use .crt, so you NEED to open the file to see if it's binary or text to determine 
-      - PEX (Personal Information Exchange) - commonly used by windows and pfx certificates  
-          - also in binary  
-          - uses .pfx, .p12  
-      - P7B - text format of PEX  
-          - uses .p7b  
+            - uses .der, .crt, .cer extensions    
+      - PEM (Privacy Enhanced Mail) - ASCII text versions of DER certificates (more readable than binary)    
+            - uses .pem and ALSO .crt    
+              - both DER AND PEM can use .crt, so you NEED to open the file to see if it's binary or text to                             determine 
+      - PEX (Personal Information Exchange) - commonly used by windows and pfx certificates    
+            - also in binary    
+            - uses .pfx, .p12     
+      - P7B - text format of PEX    
+            - uses .p7b    
