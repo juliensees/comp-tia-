@@ -47,16 +47,25 @@ Digital Signatures - use asymmetric cryptography to achieve:
           - DOES NOT PROVIDE CONFIDENTITALITY
       - uses the private key for encryption and the public key to decrypt the message
 
+DSS (Digital Signature Standard) - US standards published by NIST that supports:
+  - RSA,ECDSA(Elliptic Curve Digital Signature Algorithm),EdDSA(Edwards Curve Digital Signature Algorithm)
+
 Digital Certificate
   - X.509 - standard process for creating digital certificates  
   - contains the public key, and an expiration date, and a CN (Common Name) --like www.linkedin.com
       - can have SAN's (Subject Alternative Name) - other options covered (linkedin.com or                               rum5.perf.linkedin.com, etc)  
-  - CSR (Certificate Signing Request) - a message sent from someone who wants an SSL/TLS certificate to a                 CA (Certificate Authority)   
+  - CSR (Certificate Signing Request) - a message sent from someone who wants an SSL/TLS certificate to a                 CA (Certificate Authority)     
       - it's requesting a digital certificate to later be used for HTTPS, secure e-mail, or code signing  
-          - IT CONTAINS YOUR PUBLIC KEY, and identifying info, but not the private key  
-          - 
+          - IT CONTAINS YOUR PUBLIC KEY, and identifying info, but not the private key
+      * when someone wants a digital certificate, they prepare a CSR with proof of identity and send to a             CA. The CA verifies the certificate subject's identity, creates a digital certificate, signs the                     certificate with their private key, and sends it back  
 
-  DSS (Digital Signature Standard) - a US government standard for appropriate digital signature algorithms
-    -endoreses RSA (Rivest-Shamir-Adleman), ECDSA (Elliptic Curve Digital Algorithm), EdDSA (Edwards Curve)
+Certificate Revocation - invalidates compromised certificates
+  - 2 methods used by CA to revoke a digtal certificate
+      - CRL (Certificate Revocation List) - puts the serial number of the certificate on this list
+          - tells people not to trust a CA if it's on this list
+      - OCSP (Online Certificate Status Protocol) - sends a request to the CA who issued the certificate           to verify that it's still active, and sends back a response (PUTS THE ONUS ON THE CA, INSTEAD OF             REQUESTER)
+              - this does place burden on the OCSP servers operated by CA'S
+   
+Certificate Stapling - relieves some of the burden on CA's by validating certificates ahead of time, and             is usually valid for 24hrs
+      - a web server is basically reusing the signed certificate of anyone else who first visited the site       and "stapling" this "old" response from the CA, to it's new response to your browser
 
-  
