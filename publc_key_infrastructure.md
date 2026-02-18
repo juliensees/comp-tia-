@@ -30,7 +30,8 @@ RIPEMD - created as a non-government sponsored hash system
     - produces 128, 160, 256, and 320-bit hashes
       - 128 not used, but 160 is used a lot in Bitcoin
 
-HMAC (Hash-based Message Authentication Code) - combines symmetric cryptography and hashing    
+HMAC (Hash-based Message Authentication Code) - combines symmetric cryptography and hashing   
+
     - is fast, and low cost  
     - but both parties must keep the singular secret key safe  
       - algorithm that uses a hash function and a secret key (asymmetric algorithm) and a message to                   create a secure signature/code for the message   
