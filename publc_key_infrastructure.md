@@ -66,6 +66,16 @@ Certificate Revocation - invalidates compromised certificates
       - OCSP (Online Certificate Status Protocol) - sends a request to the CA who issued the certificate           to verify that it's still active, and sends back a response (PUTS THE ONUS ON THE CA, INSTEAD OF             REQUESTER)
               - this does place burden on the OCSP servers operated by CA'S
    
-Certificate Stapling - relieves some of the burden on CA's by validating certificates ahead of time, and             is usually valid for 24hrs
-      - a web server is basically reusing the signed certificate of anyone else who first visited the site       and "stapling" this "old" response from the CA, to it's new response to your browser
+Certificate Stapling - relieves some of the burden on CA's by validating certificates ahead of time, and               is usually valid for 24hrs  
+      - a web server is basically reusing the signed certificate of anyone else who first visited the site                   and "stapling" this "old" response from the CA, to it's new response to your browser  
 
+### CA's charge fees for their services in creating a new certificate
+
+- Self-Signed Certificates - set up by an org for internal purposes to save money and issue their own certificates
+- Certificate chaining - allows an org to have their own CA trusted by a 3rd party CA
+    - Intermediate CA - name for the internal CA
+    - Offline CA's - protects sensitive root keys by storing them offline (unless needed for signing certificates)
+
+### Root CA (Certificate Authority) - exists within public or private orgs. it contains the master keys (public/private), and signs the Intermediate CA's public key with its private key to create a new valid intermediate CA cert.... then the intermediate CA can now issue end-entity certs using its own private key
+
+- Certificate Subjects - 
