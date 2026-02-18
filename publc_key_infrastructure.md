@@ -30,9 +30,9 @@ Hash function - a one way function that transforms a variable length input into 
     - produces 128, 160, 256, and 320-bit hashes
       - 128 not used, but 160 is used a lot in Bitcoin
 
-  HMAC (Hash-based Message Authentication Code) - combines symmetric cryptography and hashing
-    - provides authentication and integrity
-    - algorithm that uses a hash function and a secret key (asymmetric algorithm) and a message to create a secure signature/code for the message 
-      - HMAC is essentially an algorithm that “signs” a message using a secret key so the receiver can               verify two things:
-            *Authenticity / Identity → The message came from someone who knows the secret key.
-            *Integrity → The message hasn’t been altered in transit.
+  HMAC (Hash-based Message Authentication Code) - combines symmetric cryptography and hashing  
+    - provides authentication and integrity  
+    - algorithm that uses a hash function and a secret key (asymmetric algorithm) and a message to create   a secure signature/code for the message   
+      - HMAC is essentially an algorithm that “signs” a message using a secret key so the receiver can                 verify two things:  
+              *Authenticity / Identity → The message came from someone who knows the secret key.  
+              *Integrity → The message hasn’t been altered in transit.  
