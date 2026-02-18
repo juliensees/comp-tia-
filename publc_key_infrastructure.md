@@ -78,4 +78,38 @@ Certificate Stapling - relieves some of the burden on CA's by validating certifi
 
 ### Root CA (Certificate Authority) - exists within public or private orgs. it contains the master keys (public/private), and signs the Intermediate CA's public key with its private key to create a new valid intermediate CA cert.... then the intermediate CA can now issue end-entity certs using its own private key
 
-- Certificate Subjects - 
+- Certificate Subject - the entity that owns the public key contained within a certificate
+    - servers, (web, SSH, file, email), devices (SAN's, routers, switches, VPN's), individual names/email, developers 
+     - OID (Certificate Object Identifier) - a standardized way to uniquely identify certificate attributes and                   policies.  
+           - identifies which signature algorithms (ex.SHA-256 with RSA), certificate extensions (Key Usage, SAN)
+
+- Certificate Pinning - an app can be configured to only accept a specific certificate or public key for a given domain 
+    - prevents Man in the Middle Attacks
+    - downside is that if the certificate actually renews/reissues, the app will break until it's updated
+
+- Certificate Types -
+    - Root Certificates - the core certificates at the heart of the CA  
+    - Wildcard Certificates -  
+              - the "*" indicates that the certificate may be used for any subject name that uses .linkedin.com  
+                - ex. *.linkedin.com  
+          - but it only goes one level deep;so "secure.linkedin.com" is included, but not "www.secure.linkedin.com"  
+      - using a wildcard allows the device to impersonate all the releveant subdomains without administrators having                   to obtain and install individual certificates for each subdomain
+     
+- CA Verification types
+  - Domain validation (DV Certificates) - the CA checks the ownership record for a domain, talks to them, and issues
+        - lowest level of security  
+  - Organizational validation (OV Certificates) - the CA verifies the certificate subject own the domain, but also             that the name of the org purchasing the certificate matches business records  
+  - Extended validation (EV Certificate) - receives docs from the certificate subject, the CA performs an extensive             investigation to verify physical existence and legitimacy of the org  
+        - most secure
+
+- Certificate Formats
+      - DER (Distinguished Encoding Rules) - binary certificate format
+          - uses .der, .crt, .cer extensions
+      - PEM (Privacy Enhanced Mail) - ASCII text versions of DER certificates (more readable than binary)
+          - uses .pem and ALSO .crt
+            - both DER AND PEM can use .crt, so you NEED to open the file to see if it's binary or text to determine
+      - PEX (Personal Information Exchange) - commonly used by windows and pfx certificates
+          - also in binary
+          - uses .pfx, .p12
+      - P7B - text format of PEX
+          - uses .p7b
