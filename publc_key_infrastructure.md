@@ -102,14 +102,14 @@ Certificate Stapling - relieves some of the burden on CA's by validating certifi
   - Extended validation (EV Certificate) - receives docs from the certificate subject, the CA performs an extensive             investigation to verify physical existence and legitimacy of the org  
         - most secure
 
-- Certificate Formats
-      - DER (Distinguished Encoding Rules) - binary certificate format
-          - uses .der, .crt, .cer extensions
-      - PEM (Privacy Enhanced Mail) - ASCII text versions of DER certificates (more readable than binary)
-          - uses .pem and ALSO .crt
-            - both DER AND PEM can use .crt, so you NEED to open the file to see if it's binary or text to determine
-      - PEX (Personal Information Exchange) - commonly used by windows and pfx certificates
-          - also in binary
-          - uses .pfx, .p12
-      - P7B - text format of PEX
-          - uses .p7b
+- Certificate Formats  
+      - DER (Distinguished Encoding Rules) - binary certificate format  
+          - uses .der, .crt, .cer extensions  
+      - PEM (Privacy Enhanced Mail) - ASCII text versions of DER certificates (more readable than binary)  
+          - uses .pem and ALSO .crt  
+            - both DER AND PEM can use .crt, so you NEED to open the file to see if it's binary or text to determine 
+      - PEX (Personal Information Exchange) - commonly used by windows and pfx certificates  
+          - also in binary  
+          - uses .pfx, .p12  
+      - P7B - text format of PEX  
+          - uses .p7b  
