@@ -9,12 +9,14 @@ Keyspace - the set of all possible encryption keys usable with an algorithm
     - so if you're using the english alphabet, and you shift one change from A's now showing B's... in total, you only have 25 possible keys before it             just starts over  
     
 Knowledge-Based Attacks - attacks that go beyond the simplicity of brute force and cmobine other info  
+
     -Frequency Analysis - the person trying to break the code does some statistical analysis of the ciphertext to detect patterns  
         - for example seeing the same letter repeatedly in ciphertext and corresponding that to common english letters  
     -Chosen Plaintext Attack - when an attacker has access to the encryption algorithm and tries inputing things into it, to reverse engineer it  
     -Birthday Attack - when an attacker searches for possible collisions in a has function that may allow an attacker to exploit that function   
 
 Limitations of encryption algorithms   
+
   - Asymmetric encryption are much slower than symmetric algorithms  
   - longer the key, more resistant it is, but requires more computing power (take longer to perform encryption/decryption)  
 
