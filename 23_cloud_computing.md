@@ -2,14 +2,14 @@ Cloud Computing - any case where computer resources over delivered to a customer
       - the resources of the cloud are accessible with the internet form anywhere
       - on-demand network - you can create/destroy cloud resources on n as needed basis 
 
-Cloud Computing Roles:  
-    Cloud Service Provider - the business that offers the computing services  
+- Cloud Computing Roles:  
+    * Cloud Service Provider - the business that offers the computing services  
         - responsible for building/maintaining their service offerings  
-        - can outsource portions of their infrastructure to other CSPs (and are then Cloud Customers also)  
-    Cloud Customer - purchase cloud computing services from one or more providers to help run business  
+        - can outsource portions of their infrastructure to other CSPs (and are then Cloud Customers                             also)  
+    * Cloud Customer - purchase cloud computing services from one or more providers to help run business  
         - they could do everything themselves or have dedicated account reps  
-    Cloud Service Partners - 3rd party companies that offer add-on services  
-    Cloud Access Security Broker (CASB) - a security solution that sits between users and cloud services               to monitor, control, and secure cloud usage  
+    * Cloud Service Partners - 3rd party companies that offer add-on services  
+    * Cloud Access Security Broker (CASB) - a security solution that sits between users and cloud                         services to monitor, control, and secure cloud usage  
         - address shadow IT - unauthorized cloud app usage   
         - basically it's cloud security control  
 
