@@ -1,6 +1,7 @@
 Instance Type - different configurations of processor, memory, and networking packages to choose from 
 
 Block Storage - divides data into fixed sized blocks and stores them separately with their own address
+
     - high performance
     - commonly used to create virtual disk drives for cloud servers
     * the user manages the file system (deciding how to format, organize, and manage it)
@@ -8,6 +9,7 @@ Block Storage - divides data into fixed sized blocks and stores them separately 
     * used for high performance, as a single system, with low latency 
 
 Object Storage - stores objects with metadata and a unique identifier
+
     - used for large amounts of unstructured data like photos, videos, backups
     - used to maintain files for a website, build large data stores, and let someone else manage it
     * the cloud provider manages everything. you store the data, and receive it
