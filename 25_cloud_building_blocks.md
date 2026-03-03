@@ -52,8 +52,9 @@ SECaas (Security as a Service) - simple security functions delivered by a cloud 
 Cloud Orchestration - the automated coordination and management of multiple cloud services and resources             working together  
       - automatically provisioning, configuring, scaling, and managing cloud infrastructure
 
-Application Programming Interfaces (API's) - is a standardized communication bridge that allows two apps               to talk to each other   
-    - it carries the request to one app, and brings back the response as well  
+Application Programming Interfaces (API's) 
+        - is a standardized communication bridge that allows two apps to talk to each other   
+        - it carries the request to one app, and brings back the response as well  
     * within cloud orchestration, API calls are made automatically based on rules & conditions  
         - when traffic spikes, the system can automatically make API calls to:  
             - spin up new servers, configure load balancer, update firewall rules, notify monitor system
@@ -70,6 +71,7 @@ Containers - lightweight way to package an entire app virtually
     * containers are less secure in the sense that if an attacker finds a kernel vulnerability, it could           affect every container simultaneously since they're all using the same host OS
    
 SOA (Service-Oriented Architecture) 
+
         - a design philosophy that embraces the use of discrete services that       may be accessed by                 customers in a blackbox fashion
         * software design approach where an app is built as a collection of separate independent services           that communicate with each other through API's
     - 1) services are logical representations of a repeatable business acivity with a specified outcome
