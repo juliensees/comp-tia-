@@ -17,6 +17,7 @@ Object Storage - stores objects with metadata and a unique identifier
         * unstructured data on a massive scale that's mostly hands off 
 
 File Storage - comes with a file system built in (folders, files, hierarchy)
+
     - more managed than block, but user still organizes and manages folder structure 
     * shared access for multiple users 
 
@@ -25,10 +26,12 @@ Cloud Networking - highly virtualied and customizable
 VLAN (Virtual LAN) - used on-premises to separate data so that only certain areas can be accessed
 
 VPC (Virtual Private Cloud) - used in the cloud to do similar segmentation of data 
+
     - what is used to separate private from public data
     * your own firewalls and security rules
 
-SDN (Software-defined networking) - the concept of a software controller manages and directing all hardware within the network infrastructure
+SDN (Software-defined networking) - the concept of a software controller manages and directing all                   hardware within the network infrastructure
+
     - enables faster/more flexible network management
     - central controller is now the biggest security concern because it controls everything
         * will have backup controllers, so there's not a single point of failure
