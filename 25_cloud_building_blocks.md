@@ -59,7 +59,8 @@ Application Programming Interfaces (API's)
         - when traffic spikes, the system can automatically make API calls to:  
             - spin up new servers, configure load balancer, update firewall rules, notify monitor system
 
-Infrastructure as Code - the idea that admins should never build or manage resources using the command               line or graphical interfaces
+Infrastructure as Code 
+        - the idea that admins should never build or manage resources using the command                                   line or graphical interfaces
     - they should write code that performs those actions for them
     * the idea is to write scripts that perform tasks so that it's reusable, instead of building things           up from scratch each time
 
