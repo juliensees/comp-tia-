@@ -17,11 +17,11 @@ Cloud Deployment Models
 
 XaaS (Anything as a service) 
 
-  IaaS (Infrastructure as a Service)
-        - customers purchase basic computing resources to piece together to create customized IT solutions
-            - might combine compute capacity, data storage, and other building blocks  
-                - AWS, Azure, and Google Compute platform  
-        * client manages most (OS, apps, encryption), provider just manages hardware/network                               infrastructure
+  IaaS (Infrastructure as a Service)  
+        - customers purchase basic computing resources to piece together to create customized IT                                         solutions  
+            - might combine compute capacity, data storage, and other building blocks    
+                - AWS, Azure, and Google Compute platform    
+        * client manages most (OS, apps, encryption), provider just manages hardware/network                                 infrastructure  
 
   PaaS (Platform as a Service)  
         - customer purchases a platform to run their own application  
