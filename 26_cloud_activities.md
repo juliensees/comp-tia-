@@ -38,21 +38,22 @@ XaaS (Anything as a service)
         - instead of an entire app, it's just performing an individual function when needed   
         * client manages just code and permissions  
 
-  Security and Privacy Concerns
-    - same principles of the CIA triad (confidentiality, integrity, and availability)
-      * also Privacy - the right of individuals to control their personal data (stronger in europe)
-    - Governance - help an org work through existing and planned cloud relationships to ensure they                 comply with security, legal, business, and other constraints (vet potential vendors, manage               relatoinships, and oversee cloud ops
-    - Audibility - cloud computing contracts specify the customer has the right to audit cloud provider
-            - could be on a scheduled or unplanned basis to make sure provider is meeting security 
-    - Regulatory Oversight - HIPAA, FERPA, PCI DSS regulations to make sure the provider is compliant 
+  Security and Privacy Concerns  
+    - same principles of the CIA triad (confidentiality, integrity, and availability)  
+      * also Privacy - the right of individuals to control their personal data (stronger in europe)  
+    - Governance - help an org work through existing and planned cloud relationships to ensure they                   comply with security, legal, business, and other constraints (vet potential vendors, manage                 relatoinships, and oversee cloud ops  
+    - Audibility - cloud computing contracts specify the customer has the right to audit cloud provider  
+            - could be on a scheduled or unplanned basis to make sure provider is meeting security   
+    - Regulatory Oversight - HIPAA, FERPA, PCI DSS regulations to make sure the provider is compliant   
     
-  Data Sovereignty 
+  Data Sovereignty     
     - cloud providers intentionally distribute customer data to many different locations in order to                 protect against regional failures
       - thus depending on where the data is stored, there are different laws in that area
         - so US data stored in the EU will apply to the US and EU laws
     - an org should have the provider put storage locations in writing, and deny the provider access to             an org's decryption key
 
     Operational Concerns  
+    
         - Availability - cloud performance = what % is the service up and running/meeting customer needs  
         - Resiliency - ability of cloud infrastructure to withstand disruptive events   
           - could use redundant servers to protect against failure of a single server or many data                         centers  
