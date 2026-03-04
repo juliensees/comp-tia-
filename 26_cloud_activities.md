@@ -47,6 +47,7 @@ XaaS (Anything as a service)
     - Regulatory Oversight - HIPAA, FERPA, PCI DSS regulations to make sure the provider is compliant   
     
   Data Sovereignty     
+  
     - cloud providers intentionally distribute customer data to many different locations in order to                 protect against regional failures
       - thus depending on where the data is stored, there are different laws in that area
         - so US data stored in the EU will apply to the US and EU laws
