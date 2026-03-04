@@ -1,7 +1,7 @@
-Cloud Controls Matrix 
-    - a security framework for cloud computing; provides a set of security control
-    - created by CSA (Cloud Security Alliance) 
-    - shared responsibility model (what provider vs client vs partner orgs are responsible for)
+Cloud Controls Matrix   
+    - a security framework for cloud computing; provides a set of security control  
+    - created by CSA (Cloud Security Alliance)   
+    - shared responsibility model (what provider vs client vs partner orgs are responsible for)  
 
 Cloud Deployment Models 
 
@@ -19,13 +19,13 @@ XaaS (Anything as a service)
 
   IaaS (Infrastructure as a Service)
         - customers purchase basic computing resources to piece together to create customized IT solutions
-            - might combine compute capacity, data storage, and other building blocks
-                - AWS, Azure, and Google Compute platform
-        * client manages most (OS, apps, encryption), provider just manages hardware/network infrastructure
+            - might combine compute capacity, data storage, and other building blocks  
+                - AWS, Azure, and Google Compute platform  
+        * client manages most (OS, apps, encryption), provider just manages hardware/network                               infrastructure
 
-  PaaS (Platform as a Service)
-        - customer purchases a platform to run their own application
-        * client manages apps and data, provider manages the rest 
+  PaaS (Platform as a Service)  
+        - customer purchases a platform to run their own application  
+        * client manages apps and data, provider manages the rest   
 
   SaaS (software as a service) 
         - customer purchases an entire app from the public cloud provider, that writes the app, configures             the servers and gets everything running for the customer
