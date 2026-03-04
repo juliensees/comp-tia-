@@ -54,7 +54,6 @@ XaaS (Anything as a service)
     - an org should have the provider put storage locations in writing, and deny the provider access to             an org's decryption key
 
     Operational Concerns  
-    
         - Availability - cloud performance = what % is the service up and running/meeting customer needs  
         - Resiliency - ability of cloud infrastructure to withstand disruptive events   
           - could use redundant servers to protect against failure of a single server or many data                         centers  
