@@ -1,7 +1,7 @@
 Cloud Controls Matrix   
-    - a security framework for cloud computing; provides a set of security control  
-    - created by CSA (Cloud Security Alliance)   
-    - shared responsibility model (what provider vs client vs partner orgs are responsible for)  
+        - a security framework for cloud computing; provides a set of security control  
+        - created by CSA (Cloud Security Alliance)   
+        - shared responsibility model (what provider vs client vs partner orgs are responsible for)  
 
 Cloud Deployment Models 
 
@@ -52,19 +52,19 @@ XaaS (Anything as a service)
         - so US data stored in the EU will apply to the US and EU laws
     - an org should have the provider put storage locations in writing, and deny the provider access to             an org's decryption key
 
-    Operational Concerns
-        - Availability - cloud performance = what % is the service up and running/meeting customer needs
-        - Resiliency - ability of cloud infrastructure to withstand disruptive events 
-          - could use redundant servers to protect against failure of a single server or many data centers
-        - Performance - how well can it hold up in busy periods
-          - SLA (Service Level Agreement) - documents vendor obligations and has financial penalties 
+    Operational Concerns  
+        - Availability - cloud performance = what % is the service up and running/meeting customer needs  
+        - Resiliency - ability of cloud infrastructure to withstand disruptive events   
+          - could use redundant servers to protect against failure of a single server or many data                         centers  
+        - Performance - how well can it hold up in busy periods  
+          - SLA (Service Level Agreement) - documents vendor obligations and has financial penalties   
 
-        Reversibility 
-            - if something goes wrong, can a transition be reversed?
-        Portability
-            - maintaining flexibility to move workloads between cloud environments & avoid vendor lock-ins
-        Interoperability
-            - ability of different systems to work together without moving anything, just communicating 
-                - your org uses microsoft 365 and your client uses google workspace (need to share docs)
-                - relies on standardized API's
-            - SaaS and PaaS products 
+        Reversibility   
+            - if something goes wrong, can a transition be reversed?  
+        Portability  
+            - maintain flexibility to move workloads between cloud environments & avoid vendor lock-ins  
+        Interoperability  
+            - ability of different systems to work together without moving anything, just communicating   
+                - your org uses microsoft 365 and your client uses google workspace (need to share docs)  
+                - relies on standardized API's  
+            - SaaS and PaaS products specific to here 
