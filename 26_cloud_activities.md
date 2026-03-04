@@ -24,19 +24,19 @@ XaaS (Anything as a service)
         * client manages most (OS, apps, encryption), provider just manages hardware/network                                 infrastructure  
 
   PaaS (Platform as a Service)  
-        - customer purchases a platform to run their own application  
-        * client manages apps and data, provider manages the rest   
+        - customer purchases a platform to run their own application    
+        * client manages apps and data, provider manages the rest     
 
   SaaS (software as a service) 
-        - customer purchases an entire app from the public cloud provider, that writes the app, configures             the servers and gets everything running for the customer
-            - usually accessed through a web browser with no configuration needed (dropbox, microsoft 365)
-                - also more specialized, like credit card processing and travel/expense report management
-        * client manages data and access, provider manages the rest 
+        - customer purchases an entire app from the public cloud provider, that writes the app,                                   configures the servers and gets everything running for the customer
+        - usually accessed through a web browser with no configuration needed (dropbox, microsoft 365)  
+                - also more specialized, like credit card processing and travel/expense report management 
+        * client manages data and access, provider manages the rest   
                 
-  FaaS (Function as a Service)
-        - also known as serverless computing
-        - instead of an entire app, it's just performing an individual function when needed 
-        * client manages just code and permissions
+  FaaS (Function as a Service)  
+        - also known as serverless computing  
+        - instead of an entire app, it's just performing an individual function when needed   
+        * client manages just code and permissions  
 
   Security and Privacy Concerns
     - same principles of the CIA triad (confidentiality, integrity, and availability)
