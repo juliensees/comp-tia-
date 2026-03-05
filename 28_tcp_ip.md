@@ -118,4 +118,4 @@
     - Smurf Attack - uses ICMP echo requests with spoofed source IP and broadcast amplification   
     - Ping Sweeping - uses ICMP to find which IP addresses have active devices (attacker recon)  
     
-  * Many orgs block ICMP at their firewalls, so attackers can't discover active hosts 
+  ### Many orgs block ICMP at their firewalls, so attackers can't discover active hosts 
