@@ -105,4 +105,17 @@
         137-139 - NetBIOS
 
         NMAP - used by attackers to scan which ports are open on a target 
-      
+
+ICMP (Internet Control Message Protocol) - the "housekeeping" protocol  
+    - Ping Command - system sends a ping command over the network, the receiving systems responds   
+        - the ping command runs an ICMP Echo request   
+                - the response is an ICMP Echo reply      
+                * your computer reports back how long it took   
+    - Traceroute - maps the actual path packets take to their destination  
+    - Error reporting - telling devices when something goes wrong (destination unreachable/time exceeded)    
+    - Ping Flood - overwhelming a target with ICMP echo requests - simple DoS attack  
+    - Ping of Death - sending oversized ICMP packetes to crash a system  
+    - Smurf Attack - uses ICMP echo requests with spoofed source IP and broadcast amplification   
+    - Ping Sweeping - uses ICMP to find which IP addresses have active devices (attacker recon)  
+    
+  * Many orgs block ICMP at their firewalls, so attackers can't discover active hosts 
