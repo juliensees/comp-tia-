@@ -14,11 +14,12 @@
             - SYN flag: opens a connection  
             - ACK flag: used to acknkowledge a SYN or FIN request (receipt of initial flag), and also
                 an acknowledgement/expectation of what sequence # it's expecting back next time.  
-            - FIN flag: closes a connection  
-        *3-way handshake is:
-            - SYN flag is sent from client to server  
-            - SYN/ACK flags are sent back to client from server (the SYN is now the server's SYN in order                         to make the fully established connection)  
-            - ACK flag is sent back to server from client (connection is established)
+            - FIN flag: closes a connection
+        
+        *3-way handshake is:  
+            - SYN flag is sent from client to server    
+            - SYN/ACK flags are sent back to client from server (the SYN is now the server's SYN in order                           to make the fully established connection)    
+            - ACK flag is sent back to server from client (connection is established)  
 
   - UDP (User Datagram Protocol)
         - lightweight, connectionless protocol
