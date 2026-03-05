@@ -26,7 +26,7 @@
         - doesn't send acknowledgement or guarantee delivery
         - often used for voice and video apps
 
-  OSI (Open Systems Interconnection) Model
+  - OSI (Open Systems Interconnection) Model
 
       - Physical Layer - wires, radios, & optics  
       - Data link Layer - data transfers between two nodes  
@@ -36,7 +36,7 @@
       - Presentation Layer - translates data so it can be transmitted (how to represent encryption)  
       - Application Layer - determines how users interact with data using web browsers/clients  
 
-IP Address 
+- IP Address 
       - Public IP - fully unique number in the world, assigned to my router by my ISP  
             - my public IP can change (dynamic IP), when restarting router or lease expires   
               * static IP addresses often used by businesses for hosting servers, VPN's, etc   
@@ -52,14 +52,14 @@ IP Address
             private IP to go to   
       * you go to google.com, request goes to your router, router uses its public IP to communicate with             the internet, and then back to you (your private IP address is never seen)  
 
-Subnets - a way of dividing a larger network into small logical segments  
+- Subnets - a way of dividing a larger network into small logical segments  
       - can divide among finance dept/general employee network/servers/guest wifi, etc.  
       - isolating each area enables network segmentation (key security control)   
       
-Subnet Mask - defines where the network portion of an ip address ends and the host portion begins  
+- Subnet Mask - defines where the network portion of an ip address ends and the host portion begins  
     255.255.255.0 = means the the last number will identify the specific device   
 
-DHCP (Dynamic Host Configuration Protocol) - allows the automatic assignment of IP addresses from an 
+- DHCP (Dynamic Host Configuration Protocol) - allows the automatic assignment of IP addresses from an 
       administrator-configured pool
           * DORA Process 
             - Discover: device joins network and asks if a DHCP server exists
@@ -67,12 +67,12 @@ DHCP (Dynamic Host Configuration Protocol) - allows the automatic assignment of 
             - Request: device takes the IP address
             - Acknowledge: server confirms the IP address is their for a set period of time 
 
-      Rogue DHCP Server: attacker sets up a fake DHCP server on the network
+      - Rogue DHCP Server: attacker sets up a fake DHCP server on the network
                 - when devices request an IP, the rogue server assigns them a valid IP, but a malicious                       default gateway and a malicious DNS server
                         - routes all traffic and DNS queries through them (MITM attack)
             * Defense: DHCP Snooping - a switch feature that only allows DHCP responses from trusted ports
 
-DNS (Domain Name System) - used to connect a website name with an IP address (that computers communicate                   with)      
+- DNS (Domain Name System) - used to connect a website name with an IP address (that computers                                               communicate with)      
       - operates over UDP port 53    
       - so when you type in a domain name, your computer sends a request to see if it's on my local                   cache, if not it asks the local DNS server (resolver) asking for the IP address associated,               if not their it asks my ISP's DNS server, and if not that, it queries up the DNS hierarchy                 until it's found  
 
@@ -83,7 +83,7 @@ DNS (Domain Name System) - used to connect a website name with an IP address (th
       - DNS Tunneling: attacker encodes malicious data or commands inside DNS queries and responses to                     bypass firewalls   
             - since DNS traffic is usually allowed through firewalls, this can be used to exfiltrate data                     or maintain command/control comms with malware     
         * DEFENSE: DNSSEC (DNS Security Extensions) - add digital signatures to DNS records so recipients         can verify the response actually came from the legitimate DNS server  (prevents spoofing/poison)    
-Network Ports - guide traffic to the correct final destination 
+- Network Ports - guide traffic to the correct final destination 
         * IP address is the building #, Port # is the apartment # (talk to the service @ port 80 (HTTP)
     - 16-bit binary #
       - 0-65,535
