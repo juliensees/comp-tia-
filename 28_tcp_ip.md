@@ -106,7 +106,7 @@
 
         NMAP - used by attackers to scan which ports are open on a target 
 
-ICMP (Internet Control Message Protocol) - the "housekeeping" protocol  
+* ICMP (Internet Control Message Protocol) - the "housekeeping" protocol  
     - Ping Command - system sends a ping command over the network, the receiving systems responds   
         - the ping command runs an ICMP Echo request   
                 - the response is an ICMP Echo reply      
