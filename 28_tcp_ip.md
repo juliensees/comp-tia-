@@ -46,7 +46,7 @@ IP Address
         - IPv4 was used for a long time, but because the world needs more, now IPv6 is being used   
         - IPv6 is 8 groups of four hexadecimal #'s
 
-NAT (Network Address Translation) - the process of translating private IP addresses to a public IP                   address and vice versa  
+- NAT (Network Address Translation) - the process of translating private IP addresses to a public IP                   address and vice versa  
     - basically the go between process of visiting a website   
     - obscures network size, unsolicited inbound traffic gets dropped if it doesn't specify which   
             private IP to go to   
