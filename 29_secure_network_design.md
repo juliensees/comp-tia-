@@ -88,8 +88,8 @@ Security Zones
         - should be as close to the internet connection as possible  
         - ideally purchased from the ISP
 
-Software-Defined Network (SDN) - a technology that separate the control of network traffic from the                   physical hardware, and instead manages it through centralized software  
-        - a single point of failure, so a high value target 
+- Software-Defined Network (SDN) - a technology that separate the control of network traffic from the                     physical hardware, and instead manages it through centralized software    
+        - a single point of failure, so a high value target   
         - enables faster/more flexible network management 
 
     - Control Plane - exists in all devices, but is taken over by SDN
