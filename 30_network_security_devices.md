@@ -102,17 +102,17 @@
         - implements through cookies, and is necessary for apps that store session data locally  
         * could be an availability concern if the server goes down   
 
-VPN's - Virtual Private Network
-      * use encryption to create a virtual "tunnel" between two systems over the internet 
-            - encrypted on user's end, and then decrypted on the other end (if traffic intercepted, it's                   useless)
-      - VPN's require an endpoint that accepts VPN connections
-                  - orgs with high volumes have a dedicated VPN concentrator 
-                  - can use a firewall, router, or server as endpoint but not efficient (slow to process)       - IPsec (Internet Protocol Security) - was used by VPN's to create encrypted tunnels 
-            * works at the network layer 
-            - often used for statis site-to-site VPN tunnels 
-      * REMOTE USER VPN's often rely on SSL or TLS VPN's that work in APPLICATION LAYER 
-                  - work on any system with a web browser and use Port 443 for comms
-                              - 443 is usually allowed through almost every firewall 
+* VPN's - Virtual Private Network  
+      * use encryption to create a virtual "tunnel" between two systems over the internet   
+            - encrypted on user's end, and then decrypted on the other end (if traffic intercepted, it's                     useless)  
+      - VPN's require an endpoint that accepts VPN connections  
+                  - orgs with high volumes have a dedicated VPN concentrator   
+                  - can use a firewall, router, or server as endpoint but not efficient (slow to process)         - IPsec (Internet Protocol Security) - was used by VPN's to create encrypted tunnels   
+            * works at the network layer   
+            - often used for statis site-to-site VPN tunnels   
+      * REMOTE USER VPN's often rely on SSL or TLS VPN's that work in APPLICATION LAYER   
+                  - work on any system with a web browser and use Port 443 for comms  
+                              - 443 is usually allowed through almost every firewall   
       * HTML5 VPN's provide web-based interface that allows users to work with internal network resources             without actually establishing a presence on the internal network  (web server is proxy)
       
       - Site-to-Site VPN's: connect remote offices to each other and headquarters (2 entire networks)    
