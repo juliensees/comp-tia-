@@ -49,21 +49,21 @@
 
 ### Physical access to a switch grants physical control of that portion of the network
 
-- VLAN Security - using Switch Software to configure "LEAST PRIVILEGE RULE"  
-      - VLAN Pruning - limiting the exposure of VLAN's, by limiting the # of switches where they are                       trunked, especially sensitive VLAN's (pruning the VLAN traffic to only what's necessary)
-      * VLAN Trunk Negotiation -  Switches have the possibility of automatic VLAN trunk negotiation                       called DTP (Dynamic Trunking Protocol)
-           - when 2 switchces connect, they can automatically detect each other & setup trunk port
-          * VLAN Hopping - attacker plugs their device into access port
-                  - sends a DTP negotiation message (pretending to be a switch)
-                  - real switch automatically negotiates a trunk connection with attacker device
-                  - attacker then has a trunk connection, receiving all VLAN traffic
-      * Port Security - works by limiting the MAC addresses that may be used on a particular switch port
-                      - admin would have to intervene to change out a device
-          - Static Mode - the admin manually configures each switch port with the allowable MAC address  
-          - Dynamic (Sticky) Mode - the admin enables port security and tells the switch to memorize the             first MAC address that it sees on any given port, and then restrict address to that MACaddress
-                  - so no one else can ever plug into that port
-                  - but if a mac address was never used... it's open...
-          - DHCP Snooping - switch level security
-              - allows the switch to inspect DHCP messages to ensure they're properly formatted and only                     coming from authorized DHCP servers 
+- VLAN Security - using Switch Software to configure "LEAST PRIVILEGE RULE"    
+      - VLAN Pruning - limiting the exposure of VLAN's, by limiting the # of switches where they are                       trunked, especially sensitive VLAN's (pruning the VLAN traffic to only what's necessary)  
+      * VLAN Trunk Negotiation -  Switches have the possibility of automatic VLAN trunk negotiation                         called DTP (Dynamic Trunking Protocol)  
+           - when 2 switchces connect, they can automatically detect each other & setup trunk port  
+          * VLAN Hopping - attacker plugs their device into access port  
+                  - sends a DTP negotiation message (pretending to be a switch)  
+                  - real switch automatically negotiates a trunk connection with attacker device  
+                  - attacker then has a trunk connection, receiving all VLAN traffic  
+      * Port Security - works by limiting the MAC addresses that may be used on a particular switch port  
+                      - admin would have to intervene to change out a device  
+          - Static Mode - the admin manually configures each switch port with the allowable MAC address    
+          - Dynamic (Sticky) Mode - the admin enables port security and tells the switch to memorize the               first MAC address that it sees on any given port, and then restrict address to that                           MACaddress  
+                  - so no one else can ever plug into that port  
+                  - but if a mac address was never used... it's open...  
+          - DHCP Snooping - switch level security  
+              - allows the switch to inspect DHCP messages to ensure they're properly formatted and only                       coming from authorized DHCP servers   
 
   ### END USER PORT - ANY ETHERNET CABLE PORT THAT SOMEONE CAN JUST PLUG INTO
