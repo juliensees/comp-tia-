@@ -108,8 +108,8 @@
       - VPN's require an endpoint that accepts VPN connections  
                   - orgs with high volumes have a dedicated VPN concentrator   
                   - can use a firewall, router, or server as endpoint but not efficient (slow to process)         - IPsec (Internet Protocol Security) - was used by VPN's to create encrypted tunnels   
-            * works at the network layer   
-            - often used for statis site-to-site VPN tunnels   
+            * works at the network layer (Layer 3)  
+              - often used for statis site-to-site VPN tunnels   
       * REMOTE USER VPN's often rely on SSL or TLS VPN's that work in APPLICATION LAYER   
                   - work on any system with a web browser and use Port 443 for comms  
                               - 443 is usually allowed through almost every firewall   
@@ -121,3 +121,37 @@
       * Full-Tunnel VPN - any traffic leaving the remote device is sent trhough the VPN back to the home                           network and protected by encryption  
       * Split-Tunnel VPN - some traffic is sent through the VPN, while other traffic is sent out through                            the user's local network
                   * reduces burden on VPN's (conserves bandwith), but users sometimes don't realize not                           all their info is encrypted (admins usually have traffic headed to corporate                                       systems through VPN, but not other stuff, but users don't realize this).                                 -- so now not used as much  
+
+- Network Intrusion Detection System (IDS)  
+      - sit on the network and monitor traffic, and then alerts administrators   
+        * finds:  
+              - SQL Injections  
+              - malformed Packets  
+              - Unusual logins  
+              - Botnet Traffic  
+            * Because admins are not always available OR TOO MANY ALERTS; IPS TAKES OVER
+  
+- Intrusion Prevention System (IPS)  
+        - CAN TAKE IMMEDIATE/CORRECTIVE ACTION TO BLOCK A THREAT  
+        * 1) False Positive Error - when IDS/IPS triggers an alert for an attack that doesn't exist  
+        * 2) False Negative Error - when IDS/IPS fails to trigger an alert for an actual attack  
+
+              - Signature Detection Systems  
+                    - contain large database with patterns & rules describing past malicious activity  
+                          * RULE-BASED DETECTION  
+                                - downside is it doesn't alert to new (previously unknown) threats  
+                                - but it reduces False-Positive alerts   
+              -  Anomaly Detection Systems/Behavior-Based Detection/Heuristic Detection  
+                    - builds models of "normal" activity trends , and reports deviations  
+                          - a user who normally connects at 8am from chicago is now in asia at 4am  
+                          * high false-positive rate  
+                                      -  not widely used  
+        - IPS Deployment Modes  
+                    - Inline(active) deployments  
+                          - device sits in the path of network comms and can block suspicious traffic  
+                          * can disrupt all network comms because inline IPS is a single point of failure          - Out-of-band (passive) deployments
+                    - not on the network path, so doesn't disrupt the flow, but just receives copy of                               traffic  
+                    * can still react by sending commands to block future from offending systems, but                                 CANNOT STOP INITIAL ATTACK  
+                                - REACTS AFTER ATTACK HAS STARTED
+
+  
