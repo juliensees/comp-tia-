@@ -154,4 +154,28 @@
                     * can still react by sending commands to block future from offending systems, but                                 CANNOT STOP INITIAL ATTACK  
                                 - REACTS AFTER ATTACK HAS STARTED
 
-  
+  - Protocol Analyzers  
+                - allow admins to peer into the actual packets on a network  
+                - used to troubleshoot network issues & investigate security incidents  
+                * Wireshark - most common and free protocol/packet analyzer   
+
+                * tcpdump - command line protocol analyzer  
+                      * both built on libpcap library  
+                * tcpreplay - command line tool that takes packet captures created by tcpdump or                                 wireshark, and allows you or an attacker to edit and replay network traffic
+
+  - Unified threat management (UTM)
+                - combines a firewall and router and other security features into one device
+                * VPN Connectivity
+                * IDS & IPS
+                * might also perform URL filtering (block unwanted sites) & content inspection
+                * might also have malware inspection (similar to antivirus software
+                * might also perform malware inspection in emails, and spam filtering
+
+  - Failure Modes  
+                - Bolt-on Security  
+                      - when security engineers attempt to retrofit an existing system with new features  
+          - Fail Open System  
+                - if security controls fail, they are bypassed (so that business can continue)   
+          - Fail Closed System  
+                - if security control fails, the system locks itself down where no access is granted  
+                * firewalls are usually fail-close state so that future malicious attacks stop, but IDS                     failure is usually open, so it doesn't disrupt all network activity  
