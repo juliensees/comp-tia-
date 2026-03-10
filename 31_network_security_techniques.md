@@ -50,7 +50,7 @@
 ### Physical access to a switch grants physical control of that portion of the network
 
 - VLAN Security - using Switch Software to configure "LEAST PRIVILEGE RULE"
--    
+    
       - VLAN Pruning - limiting the exposure of VLAN's, by limiting the # of switches where they are                       trunked, especially sensitive VLAN's (pruning the VLAN traffic to only what's necessary)  
       * VLAN Trunk Negotiation -  Switches have the possibility of automatic VLAN trunk negotiation                         called DTP (Dynamic Trunking Protocol)  
            - when 2 switchces connect, they can automatically detect each other & setup trunk port  
