@@ -136,9 +136,19 @@
                   NEW SUSPICIOUS BEHAVIOR FROM UNKNOWN THREATS  
                       - BEHAVIOR BASED, NOT SIGNATURE BASED   
                   - it records everything happening on a device and investigates and responds  
-                          - CAN ISOLATE COMPROMISED ENDPOINTS   
+                          - CAN ISOLATE COMPROMISED ENDPOINTS
+          
         - Geofencing - determines the physical location of a user and then only grants the user access to  
                   resources when they're in an authorized area  
-                      * used to block access when an employee is traveling in an untrusted area of the world   
+                      - ALERTS WHEN A DEVICE LEAVES A DEFINED AREA 
+                      * used to block access when an employee is traveling in an untrusted area of the world
+
+- SASE (Secure Access Service Edge) -  
+          - combines network and security functions into one unified cloud delivered service  
+                  * BUNDLES TOGETHER VPN, FIREWALL, CASB, SECURE WEB GATEWAY, ETC INTO ONE "PRODUCT"    
     
-    
+    - ZTNA (Zero Trust Network Access)  - no user or device should be granted access to resources based on                           their location on the network  
+          - replaces network-focused approach to access control with strong user authentication and                                   authorization tech  
+          * traditional VPN authenticates user and gives broad access to entire corporate network  
+              - ZTNA connects user directly to specific apps only that they're authorized for   
+
